@@ -7,8 +7,9 @@
     <title>Tasos Tzaras</title>
     <link rel="icon" href="binary_title.png" type="image/x-icon">
     <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="styles.css" id="styleSheet">
-    <script src="updateVersion.js"></script>
+    <link rel="stylesheet" href="styles.css?v=<%= new Date().getTime() %>">
+    <!-- Link to your JavaScript file with a dynamically generated version -->
+    <script src="updateVersion.js?v=<%= new Date().getTime() %>"></script>
 </head>
 
 <body>

@@ -24,11 +24,11 @@ nav {
     padding: 10px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+qr {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
 }
 
 section {

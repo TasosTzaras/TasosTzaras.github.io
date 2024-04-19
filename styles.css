@@ -17,6 +17,18 @@ header {
     padding: 10px;
 }
 
+qr {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+}
+
+qr a {
+    background-color: #333;
+    color: white;    
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -24,11 +36,11 @@ nav {
     padding: 10px;
 }
 
-qr {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
 }
 
 section {

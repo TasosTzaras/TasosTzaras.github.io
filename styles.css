@@ -26,7 +26,7 @@ img{
 }
 
 .btn{
-    border: 2px solid #1f2937;
+    border: 2px solid;
     background-color: #1f2937;
     color: #fff;
     cursor: pointer;
@@ -94,6 +94,7 @@ img{
     display: flex;
     gap: 20px;  
     align-items: center;
+    flex-direction: column;
 }
 
 .navbar__locations h5{
@@ -110,7 +111,7 @@ img{
 }
 
 .navbar__actions .btn{
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-size: large;
     font-family: 'MrRobot', sans-serif;
 }
@@ -326,7 +327,7 @@ img{
 @media screen and (max-width: 768px) {
     
     .navbar{
-        padding: 20px 20px;
+        padding: 10px 20px;
     }
 
     .navbar__actions{
@@ -348,6 +349,7 @@ img{
 
     .navbar__menu{
         font-size: 12px;
+        gap: 5px;
     }
 
     .hero{

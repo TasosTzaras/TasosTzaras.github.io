@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/mrrobot');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
 /* Your CSS styles go here */
 
 html{
     scroll-behavior: smooth;
 }
 *{
+    background-color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "M PLUS 1 Code", monospace;
 }
 
 a{
@@ -28,17 +32,18 @@ img{
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.5s ease;
+    color: red;
 }
 
 .btn:hover, .hero__socials a:hover{
     background-color: #1f2937;
-    color: red;   
+    color: greenyellow;   
 }
 
 .btn--secondary{
     background: #fff;
     border: 2px solid #e5e7eb;
-    color: #1f2937;
+    color: red;
 }
 
 .btn--secondary:hover{
@@ -48,7 +53,6 @@ img{
 }
 
 .navbar{
-    /* background: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +64,7 @@ img{
     align-items: center;
     font-weight: 600;
     gap: 10px;
+    color: red;
 }
 
 .navbar__logo i{
@@ -68,7 +73,11 @@ img{
 
 .navbar__menu{
     display: flex;
-    gap: 20px;
+    gap: 90px;
+}
+
+.navbar__menu a{
+    color: red;
 }
 
 .navbar__link{
@@ -94,6 +103,7 @@ img{
 }
 
 .navbar__locations p{
+    color: red;
     font-weight: lighter;
     font-size: 28px;
     font-family: 'MrRobot', sans-serif;
@@ -129,6 +139,7 @@ img{
 }
 
 .hero__content h2{
+    color: red;
     font-size: 28px;
     font-family: 'MrRobot', sans-serif;
     font-weight: 550;
@@ -137,6 +148,7 @@ img{
 }
 
 .hero__intro h3{
+    color: red;
     font-weight: 500;
     font-size: 40px;
     line-height: 50px;
@@ -172,12 +184,13 @@ img{
 }
 
 .hero__socials a{
+    color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    border: 2px solid #1f2937;
-    border-radius: 20%;
+    border: 2px solid red;
+    border-radius: 8%;
     transition: all 0.5s ease;
 }
 

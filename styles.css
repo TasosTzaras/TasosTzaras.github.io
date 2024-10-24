@@ -2,6 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/mrrobot');
 /* Your CSS styles go here */
 
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -87,12 +90,13 @@ img{
 .navbar__locations h5{
     font-weight: 500;
     color: #6b7280;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .navbar__locations p{
-    font-weight: 500;
-    font-size: 11px;
+    font-weight: lighter;
+    font-size: 28px;
+    font-family: 'MrRobot', sans-serif;
 }
 
 .navbar__actions .btn{

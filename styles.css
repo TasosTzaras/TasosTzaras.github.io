@@ -330,6 +330,14 @@ img{
         padding: 10px 20px;
     }
 
+    .navbar__logo{
+        font-size: 10px;
+    }
+
+    .navbar__logo i{
+        font-size: 14px;
+    }
+
     .navbar__actions{
         flex-direction: column;
         display: flex;

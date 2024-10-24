@@ -65,10 +65,11 @@ img{
     font-weight: 600;
     gap: 10px;
     color: red;
+    font-size: 25px;
 }
 
 .navbar__logo i{
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .navbar__menu{
@@ -78,6 +79,7 @@ img{
 
 .navbar__menu a{
     color: red;
+    font-size: 24px;
 }
 
 .navbar__link{
@@ -100,19 +102,19 @@ img{
 .navbar__locations h5{
     font-weight: 500;
     color: #6b7280;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .navbar__locations p{
     color: red;
     font-weight: lighter;
-    font-size: 28px;
+    font-size: 35px;
     font-family: 'MrRobot', sans-serif;
 }
 
 .navbar__actions .btn{
     padding: 5px 5px;
-    font-size: large;
+    font-size: 25px;
     font-family: 'MrRobot', sans-serif;
 }
 
@@ -141,7 +143,7 @@ img{
 
 .hero__content h2{
     color: red;
-    font-size: 28px;
+    font-size: 35px;
     font-family: 'MrRobot', sans-serif;
     font-weight: 550;
     margin-top: 20px;
@@ -151,7 +153,7 @@ img{
 .hero__intro h3{
     color: red;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 50px;
     margin-bottom: 10px;
     text-align: center;
@@ -170,7 +172,7 @@ img{
 
 .hero__actions .btn, .skills__actions .btn{
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 17px;
     font-family: 'MrRobot', sans-serif;
     font-weight: 100;
 }
@@ -356,8 +358,11 @@ img{
     }
 
     .navbar__menu{
-        font-size: 12px;
-        gap: 5px;
+        gap: 15px;
+    }
+
+    .navbar__menu a{
+        font-size: 15px;
     }
 
     .hero{

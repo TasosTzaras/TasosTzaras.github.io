@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasos Tzaras</title>
+    <!-- <link rel="icon" href="binary_title.png" type="image/x-icon"> -->
+    <link rel="icon" href="mr_robot_title.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.min.css">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css?v=<%= Date.now() %>">
+    <!-- Link to your JavaScript file with a dynamically generated version -->
+    <script>
+        const version = new Date().getTime();
+        document.write(`<link rel="stylesheet" href="styles.css?v=${version}">`);
+        document.write(`<script src="updateVersion.js?v=${version}"><\/script>`);
+    </script>
+</head>
+
+
+
+<body>
+    <!-- <header>
+        <h1>ARE YOU A ZERO OR A ONE?</h1>
+    </header>
+
+    <qr>
+        <figure>
+            <img src="linktre.png" , alt="Linktree QRCode" , style="width:128px;height:128px;">
+            <figcaption><a>Scan For LinkTree!</a></figcaption>
+        </figure>
+    </qr> -->
+
+    <nav class="navbar">
+        <a href="#" class="navbar__logo"><i class="ri-terminal-fill"></i>Tasos Tzaras</a>
+
+        <div class="navbar__menu">
+            <a href="#navbar__link">About</a>
+            <a href="#navbar__link">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="navbar__actions">
+            <div class="navbar__locations">
+                <h5>Preveza, Greece</h5>
+                <p id="clock"></p>
+            </div>
+            <button class="btn"> Hello Friend</button>
+        </div>
+
+        <!-- <a href="https://drive.google.com/file/d/1UVGSb6h_V1qrWUynaitBi6rzxxoEgZCw/view?usp=sharing" target="_blank">
+            <i class="ri-drive-line"></i>Resume
+        </a>
+        <a href="https://www.linkedin.com/in/tasos-tzaras-04910b213/" target="_blank"><i
+                class="ri-linkedin-box-fill"></i>LinkedIn</a>
+        <a href="https://github.com/TasosTzaras" target="_blank"><i class="ri-github-line"></i>GitHub</a> -->
+    </nav>
+    <section class="hero">
+        <div class="hero__content">
+            <img src="DSC_0192.jpg" alt="Profile Picture" class="hero__image">
+            <h2>Hello, friend.<br>Hello, friend?<br>That's lame.<br>Maybe I should give you a name. But that's a
+                slippery
+                slope.<br>Anyway, I'm Tasos Tzaras;</h2>
+        </div>
+
+        <div class="hero__intro">
+            <h3>Frontend Developer From Greece</h3>
+            <p></p>
+            <div class="hero__actions">
+                <button class="btn">Work with Me</button>
+                <button class="btn btn--secondary">Check my Portfolio</button>
+            </div>
+        </div>
+
+        <div class="hero__socials">
+            <a href="https://www.linkedin.com/in/tasos-tzaras-04910b213/" target="_blank"><i
+                    class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/TasosTzaras" target="_blank"><i class="ri-github-line"></i></a>
+        </div>
+    </section>
+
+    <section class="skills"></section>
+
+    <section id="contact" class="contact">
+        <!-- <div class="skills_description"></div> -->
+
+        <div class="contact__actions">
+            <button class="btn">Work with Me</button>
+            <button class="btn btn--secondary">Contact Me</button>
+        </div>
+    </section>
+
+
+    <!-- <section>
+        <h2>Control is an illusion</h2>
+
+    </section> -->
+
+
+    <script src="clock.js"></script>
+
+</body>
+
+</html>

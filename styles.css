@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mrrobot');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+/* Your CSS styles go here */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS 1 Code", monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #1f291f;   
+}
+
+img{
+    object-fit: cover;
+}
+
+.btn{
+    border: 2px solid;
+    background-color: #1f2937;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    color: red;
+}
+
+.btn:hover, .hero__socials a:hover{
+    background-color: #1f2937;
+    color: greenyellow;   
+}
+
+.btn--secondary{
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    color: red;
+}
+
+.btn--secondary:hover{
+    border-color: #1f2937;
+    background: #1f2937;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+.navbar__logo i{
+    font-size: 25px;
+}
+
+.navbar__menu{
+    display: flex;
+    gap: 90px;
+}
+
+.navbar__menu a{
+    color: red;
+    font-size: 20px;
+}
+
+.navbar__link{
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.navbar__link:hover{
+    color: black;
+}
+
+.navbar__actions{
+    display: flex;
+    gap: 20px;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar__locations h5{
+    font-weight: 500;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.navbar__locations p{
+    color: red;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'MrRobot', sans-serif;
+}
+
+.navbar__actions .btn{
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: 'MrRobot', sans-serif;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    gap: 60px;
+    height: calc(100vh - 75px);
+    border-bottom-color: red;
+}
+
+.hero__content, .hero__intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__image{
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.hero__content h2{
+    color: red;
+    font-size: 30px;
+    font-family: 'MrRobot', sans-serif;
+    font-weight: 550;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.hero__intro h3{
+    color: red;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hero__intro p{
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.hero__actions{
+    display: flex;
+    gap: 10px;
+}
+
+.hero__actions .btn, .contact__actions .btn{
+    padding: 6px 12px;
+    font-size: 17px;
+    font-family: 'MrRobot', sans-serif;
+    font-weight: 100;
+}
+
+.hero__socials{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    gap: 20px;
+    top: 30%;
+}
+
+.hero__socials a{
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 2px solid red;
+    border-radius: 8%;
+    transition: all 0.5s ease;
+}
+
+.contact{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1230px) {
+    
+
+
+    .hero__content h2{
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .hero__intro h3{
+        font-size: 30px;
+    }
+
+    .hero__intro p{
+        font-size: 15px;
+    }
+
+    .contact__desc{
+        padding-right: 20px;
+    }
+    
+    .contact__desc h3{
+        font-size: 26px;
+    }
+
+    .contact__stats i{
+        font-size: 50px;
+    }
+
+    .skill__info h5{
+        font-size: 20px;
+    }
+
+    .skill__info p{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .category__title{
+        width: 40%;
+    }
+
+    .category__desc{
+        width: 60%;
+    }
+
+    .category__projects{
+        flex-wrap: wrap;
+    }
+
+    .project-card{
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .navbar{
+        padding: 20px 30px;
+    }
+
+    .hero{
+        padding: 100px 30px 40px;
+    }
+
+    .hero__intro h3{
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .hero__intro p{
+        font-size: 13px;
+    }
+
+    .hero__socials{
+        top: 6%;
+    }
+
+    .contact{
+        flex-direction: column;
+        padding: 60px 30px 80px;
+    }
+
+    .contact__desc,
+    .contact__stats,
+    .category__title,
+    .category__desc,
+    .career__jobs,
+    .career__awards{
+        width: 100%;
+    }
+
+    .contact__desc{
+        padding-right: 0;
+    }
+
+    .showcase{
+        padding: 80px 30px 100px;
+    }
+
+    .category__header{
+        flex-direction: column;
+    }
+
+    .category__title{
+        margin-bottom: 20px;
+    }
+
+    .career{
+        padding: 60px 30px 80px;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer{
+        padding: 20px 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .navbar{
+        padding: 10px 20px;
+    }
+
+    .navbar__logo{
+        font-size: 10px;
+    }
+
+    .navbar__logo i{
+        font-size: 14px;
+    }
+
+    .navbar__actions{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__actions .btn{
+        font-size: 10px;
+    }
+
+    .navbar__actions h5{
+        font-size: 10px;
+    }
+    .navbar__actions p{
+        font-size: 18px;
+    }
+
+    .navbar__menu{
+        gap: 15px;
+    }
+
+    .navbar__menu a{
+        font-size: 15px;
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 30px 0px;
+        gap: 30px;
+    }
+
+    .hero__intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero__content h2{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .hero__actions .btn, .btn--secondary,
+    .contact__actions .btn, .btn--secondary{
+        font-size: 14px;
+    }
+
+    .hero__socials{
+        position: relative;
+        flex-direction: row;
+        right: auto;
+        margin-top: 10px;
+    }
+
+    .showcase__header h3{
+        font-size: 24px;
+    }
+
+    .category__title h4{
+        font-size: 20px;
+    }
+
+    .project-card{
+        width: 100%;
+        height: 500px;
+    }
+
+    .project-card__image{
+        height: 300px;
+    }
+
+    .career h3{
+        font-size: 26px;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+}

@@ -36,8 +36,8 @@
         <a href="#" class="navbar__logo"><i class="ri-terminal-fill"></i>Tasos Tzaras</a>
 
         <div class="navbar__menu">
-            <a href="#navbar__link">About</a>
-            <a href="#navbar__link">Projects</a>
+            <a href="#hero">About</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
 
@@ -74,7 +74,7 @@
                 class="ri-linkedin-box-fill"></i>LinkedIn</a>
         <a href="https://github.com/TasosTzaras" target="_blank"><i class="ri-github-line"></i>GitHub</a> -->
     </nav>
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero__content">
             <img src="DSC_0192.jpg" alt="Profile Picture" class="hero__image">
             <h2>Hello, friend.<br>Hello, friend?<br>That's lame.<br>Maybe I should give you a name. But that's a
@@ -98,7 +98,97 @@
         </div>
     </section>
 
-    <section class="skills"></section>
+    <section id="projects" class="projects">
+        <div class="thesis__project">
+            <h2>Academic Thesis</h2>
+            <h4>In my thesis on target identification in drug discovery using machine learning, I focused on identifying
+                viable
+                molecular targets specifically for COX-1 and COX-2 enzymes. These enzymes are crucial in inflammatory
+                processes, making
+                them primary targets for developing anti-inflammatory drugs. Traditional methods for identifying these
+                targets are
+                costly and time-consuming, so my research aimed to develop a data-driven machine learning approach to
+                streamline this
+                process.<br><br>
+                Data Collection and Preparation<br>
+                I curated a comprehensive dataset from sources like ChEMBL and the Protein Data Bank (PDB), which
+                included molecular
+                descriptors, structural information, and known interactions between COX enzymes and various compounds.
+                Key features
+                included hydrophobicity, molecular weight, topological polar surface area, and sequence-based
+                descriptors, providing
+                essential data points for predictive modeling.<br>
+                To prepare the data for analysis, I addressed class imbalance with SMOTE (Synthetic Minority
+                Over-sampling Technique) to
+                balance interactions versus non-interactions. I also applied standardization and normalization
+                techniques to ensure
+                consistency across the dataset and reduce noise.<br>
+                Exploratory Data Analysis (EDA)
+                Through EDA, I explored correlations among descriptors, refining highly correlated features like
+                molecular weight and
+                surface area to avoid redundancy. Visualizing descriptor distributions allowed me to observe trends
+                specific to COX-1
+                and COX-2 interactions, guiding feature selection and engineering to capture biologically relevant
+                patterns.<br><br>
+                Model Evaluation<br>
+                Model evaluation was conducted using the following metrics:<br>
+                Precision
+                Recall
+                F1 Score
+                ROC-AUC
+                Interpretability and Feature Importance
+                To ensure interpretability, I used SHAP (SHapley Additive exPlanations) values, which helped pinpoint
+                the molecular
+                descriptors most influential in identifying COX-1 and COX-2 interactions. Important features like
+                hydrophobicity and
+                polarity consistently aligned with known biological insights into COX binding, supporting the relevance
+                of the model’s
+                predictions.<br><br>
+                Results and Conclusions<br>
+                After fine-tuning, my models demonstrated high precision in predicting COX-1 and COX-2 targets,
+                significantly reducing
+                the need for exhaustive experimental testing. This work underscored the potential for machine learning
+                to efficiently
+                identify therapeutic targets, advancing drug discovery efforts for COX-specific treatments.
+            </h4>
+            <h2>Internship</h2>
+            <h4>During my internship, I focused on advanced computer vision tasks, honing my skills in both model
+                experimentation and
+                dataset management. I began by working with YOLOv5 and YOLOv8 models, initially testing YOLOv5’s
+                performance on large
+                vehicle datasets under various conditions like low light and nighttime, which helped me identify key
+                model limitations.
+                This led to the use of CVAT for manual annotation and dataset refinement, ensuring better training data
+                for challenging
+                environments. Through detailed experimentation, I compared the performance of different dataset sizes,
+                gaining insights
+                into how image quantity affects model accuracy.<br><br>
+                To address domain adaptation challenges, I implemented Style Transfer using the StyleShot tool,
+                successfully changing
+                images’ lighting conditions to evaluate model robustness across diverse settings. This adaptation
+                allowed me to train
+                and test models using images taken at different times of the day, with notable results recorded on
+                TensorBoard. I also
+                explored PhyCV for physics-based image processing, which enhanced image quality by removing excess light
+                or shadows,
+                providing cleaner inputs for training.<br><br>
+                On the research side, I delved into domain generalization, transfer learning, and style transfer
+                techniques, evaluating
+                Visual-Language Models (VLMs) like Kosmos-2 and Florence-2 for potential in accelerating the annotation
+                process. I
+                further experimented with SAM2 on Ultralytics, exploring its segmentation and detection capabilities
+                through bounding
+                box prompts, enhancing the accuracy and speed of object detection.<br><br>
+                Throughout the internship, I documented each phase and troubleshooting step, and I wrapped up by
+                creating a
+                comprehensive documentation of the entire workflow. This hands-on experience with machine learning tools
+                and model
+                fine-tuning broadened my expertise in deploying and optimizing computer vision systems across complex
+                conditions.
+
+            </h4>
+        </div>
+    </section>
 
     <section id="contact" class="contact">
         <!-- <div class="skills_description"></div> -->

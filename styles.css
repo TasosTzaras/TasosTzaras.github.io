@@ -20,6 +20,7 @@
   --hero-intro-color: red;
   --hero-intro-secondary-color: #6b7280;
   --hero-socials-color: red;
+  --projects-text-color: #1f2937;
   --contact-color: red;
 }
 
@@ -36,10 +37,11 @@
   --navbar-link-hover-color: #ffffff;
   --navbar-locations-color: #ffffff;
   --navbar-clock-color: red;
-  --hero-content-color: #ffffff;
+  --hero-content-color: red;
   --hero-intro-color: #ffffff;
   --hero-intro-secondary-color: #ffffff;
   --hero-socials-color: #ffffff;
+  --projects-text-color: white;
   --contact-color: #ffffff;
 }
 
@@ -77,9 +79,9 @@ img {
 }
 
 .icon-margin {
-    color: var(--button-text-color);
-    margin-left: 4px;
-    background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  margin-left: 4px;
+  background-color: var(--button-background-color);
 }
 
 .btn:hover {
@@ -165,7 +167,7 @@ img {
   font-family: 'MrRobot', sans-serif;
 }
 
-.hero {
+.hero{
   position: relative;
   display: flex;
   align-items: center;
@@ -189,7 +191,7 @@ img {
   border-radius: 25px;
 }
 
-.hero__content h2 {
+.hero__content h2, .thesis__project h2 {
   color: var(--hero-content-color);
   font-size: 30px;
   font-family: 'MrRobot', sans-serif;
@@ -248,6 +250,24 @@ img {
 .hero__socials a:hover {
     background-color: var(--button-hover-background-color);
     color: var(--button-hover-text-color);
+}
+
+.projects{
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 50px 60px;
+  gap: 60px;
+  height: calc(100vh - 75px);
+  border-bottom-color: red;
+}
+
+.thesis__project h2{
+  color: red;
+}
+h4{
+  color: var(--projects-text-color);
 }
 
 .contact {
@@ -314,7 +334,7 @@ img {
     padding: 20px 30px;
   }
 
-  .hero {
+  .hero, .projects{
     padding: 100px 30px 40px;
   }
 
@@ -411,7 +431,7 @@ img {
     font-size: 15px;
   }
 
-  .hero {
+  .hero, .projects{
     flex-direction: column;
     height: auto;
     padding: 40px 30px 0px;

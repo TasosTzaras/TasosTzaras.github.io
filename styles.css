@@ -3,423 +3,467 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
 
-/* Your CSS styles go here */
-
-html{
-    scroll-behavior: smooth;
-}
-*{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "M PLUS 1 Code", monospace;
-}
-
-a{
-    text-decoration: none;
-    color: #1f291f;   
-}
-
-img{
-    object-fit: cover;
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1f291f;
+  --button-background-color: #1f2937;
+  --button-text-color: #ffffff;
+  --button-hover-background-color: #1f2937;
+  --button-hover-text-color: greenyellow;
+  --navbar-logo-color: red;
+  --navbar-menu-color: #1f2937;
+  --navbar-link-hover-color: black;
+  --navbar-locations-color: #6b7280;
+  --navbar-clock-color: red;
+  --hero-content-color: #1f2937;
+  --hero-intro-color: red;
+  --hero-intro-secondary-color: #6b7280;
+  --hero-socials-color: red;
+  --contact-color: red;
 }
 
-.btn{
-    border: 2px solid;
-    background-color: #1f2937;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-    color: red;
+.dark-mode {
+  --background-color: black;
+  --text-color: red;
+  --link-color: red;
+  --button-background-color: #1f2937;
+  --button-text-color: red;
+  --button-hover-background-color: #1f2937;
+  --button-hover-text-color: greenyellow;
+  --navbar-logo-color: #ffffff;
+  --navbar-menu-color: #ffffff;
+  --navbar-link-hover-color: #ffffff;
+  --navbar-locations-color: #ffffff;
+  --navbar-clock-color: red;
+  --hero-content-color: #ffffff;
+  --hero-intro-color: #ffffff;
+  --hero-intro-secondary-color: #ffffff;
+  --hero-socials-color: #ffffff;
+  --contact-color: #ffffff;
 }
 
-.btn:hover, .hero__socials a:hover{
-    background-color: #1f2937;
-    color: greenyellow;   
+html {
+  scroll-behavior: smooth;
 }
 
-.btn--secondary{
-    background: #fff;
-    border: 2px solid #e5e7eb;
-    color: red;
+* {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1 Code", monospace;
+  color: var(--text-color);
+  transition: all 0.5s ease;
 }
 
-.btn--secondary:hover{
-    border-color: #1f2937;
-    background: #1f2937;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all 0.5s ease;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 60px;
+img {
+  object-fit: cover;
 }
 
-.navbar__logo{
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    gap: 10px;
-    color: red;
-    font-size: 20px;
+.btn {
+  border: 2px solid;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s ease;
 }
 
-.navbar__logo i{
-    font-size: 25px;
+.icon-margin {
+    color: var(--button-text-color);
+    margin-left: 4px;
+    background-color: var(--button-background-color);
 }
 
-.navbar__menu{
-    display: flex;
-    gap: 90px;
+.btn:hover {
+  background-color: var(--button-hover-background-color);
+  color: var(--button-hover-text-color);
 }
 
-.navbar__menu a{
-    color: red;
-    font-size: 20px;
+.btn--secondary {
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  color: red;
 }
 
-.navbar__link{
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.5s ease;
+.btn--secondary:hover {
+  border-color: #1f2937;
+  background: #1f2937;
+  color: #fff;
 }
 
-.navbar__link:hover{
-    color: black;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
 }
 
-.navbar__actions{
-    display: flex;
-    gap: 20px;  
-    align-items: center;
-    flex-direction: column;
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+  color: var(--navbar-logo-color);
+  font-size: 20px;
 }
 
-.navbar__locations h5{
-    font-weight: 500;
-    color: #6b7280;
-    font-size: 16px;
+.navbar__logo i {
+  font-size: 25px;
 }
 
-.navbar__locations p{
-    color: red;
-    font-weight: lighter;
-    font-size: 30px;
-    font-family: 'MrRobot', sans-serif;
+.navbar__menu {
+  display: flex;
+  gap: 90px;
 }
 
-.navbar__actions .btn{
-    padding: 5px 5px;
-    font-size: 20px;
-    font-family: 'MrRobot', sans-serif;
+.navbar__menu a {
+  color: var(--navbar-menu-color);
+  font-size: 20px;
 }
 
-.hero{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 60px;
-    gap: 60px;
-    height: calc(100vh - 75px);
-    border-bottom-color: red;
+.navbar__link {
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
-.hero__content, .hero__intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.navbar__link:hover {
+  color: var(--navbar-link-hover-color);
 }
 
-.hero__image{
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
+.navbar__actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero__content h2{
-    color: red;
-    font-size: 30px;
-    font-family: 'MrRobot', sans-serif;
-    font-weight: 550;
-    margin-top: 20px;
-    width: 90%;
+.navbar__locations h5 {
+  font-weight: 500;
+  color: var(--navbar-locations-color);
+  font-size: 16px;
 }
 
-.hero__intro h3{
-    color: red;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-    margin-bottom: 10px;
-    text-align: center;
+.navbar__locations p {
+  color: var(--navbar-clock-color);
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: 'MrRobot', sans-serif;
 }
 
-.hero__intro p{
-    font-weight: 500;
-    color: #6b7280;
-    margin-bottom: 30px;
+.navbar__actions .btn {
+  padding: 5px 5px;
+  font-size: 20px;
+  font-family: 'MrRobot', sans-serif;
 }
 
-.hero__actions{
-    display: flex;
-    gap: 10px;
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+  gap: 60px;
+  height: calc(100vh - 75px);
+  border-bottom-color: red;
 }
 
-.hero__actions .btn, .contact__actions .btn{
-    padding: 6px 12px;
-    font-size: 17px;
-    font-family: 'MrRobot', sans-serif;
-    font-weight: 100;
+.hero__content, .hero__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.hero__socials{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 20px;
-    gap: 20px;
-    top: 30%;
+.hero__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
 }
 
-.hero__socials a{
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    border: 2px solid red;
-    border-radius: 8%;
-    transition: all 0.5s ease;
+.hero__content h2 {
+  color: var(--hero-content-color);
+  font-size: 30px;
+  font-family: 'MrRobot', sans-serif;
+  font-weight: 550;
+  margin-top: 20px;
+  width: 90%;
 }
 
-.contact{
-    padding: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero__intro h3 {
+  color: var(--hero-intro-color);
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero__intro p {
+  font-weight: 500;
+  color: var(--hero-intro-secondary-color);
+  margin-bottom: 30px;
+}
+
+.hero__actions, .contact__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hero__actions .btn, .contact__actions .btn {
+  padding: 6px 12px;
+  font-size: 17px;
+  font-family: 'MrRobot', sans-serif;
+  font-weight: 100;
+}
+
+.hero__socials {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  gap: 20px;
+  top: 30%;
+}
+
+.hero__socials a {
+  color: var(--hero-socials-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border: 2px solid red;
+  border-radius: 8%;
+  transition: all 0.5s ease;
+}
+
+.hero__socials a:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+.contact {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1230px) {
-    
+  .hero__content h2 {
+    font-size: 38px;
+    text-align: center;
+  }
 
+  .hero__intro h3 {
+    font-size: 30px;
+  }
 
-    .hero__content h2{
-        font-size: 38px;
-        text-align: center;
-    }
+  .hero__intro p {
+    font-size: 15px;
+  }
 
-    .hero__intro h3{
-        font-size: 30px;
-    }
+  .contact__desc {
+    padding-right: 20px;
+  }
 
-    .hero__intro p{
-        font-size: 15px;
-    }
+  .contact__desc h3 {
+    font-size: 26px;
+  }
 
-    .contact__desc{
-        padding-right: 20px;
-    }
-    
-    .contact__desc h3{
-        font-size: 26px;
-    }
+  .contact__stats i {
+    font-size: 50px;
+  }
 
-    .contact__stats i{
-        font-size: 50px;
-    }
+  .skill__info h5 {
+    font-size: 20px;
+  }
 
-    .skill__info h5{
-        font-size: 20px;
-    }
+  .skill__info p {
+    font-size: 12px;
+    width: 100%;
+  }
 
-    .skill__info p{
-        font-size: 12px;
-        width: 100%;
-    }
+  .category__title {
+    width: 40%;
+  }
 
-    .category__title{
-        width: 40%;
-    }
+  .category__desc {
+    width: 60%;
+  }
 
-    .category__desc{
-        width: 60%;
-    }
+  .category__projects {
+    flex-wrap: wrap;
+  }
 
-    .category__projects{
-        flex-wrap: wrap;
-    }
-
-    .project-card{
-        width: 48%;
-    }
-
+  .project-card {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    
-    .navbar{
-        padding: 20px 30px;
-    }
+  .navbar {
+    padding: 20px 30px;
+  }
 
-    .hero{
-        padding: 100px 30px 40px;
-    }
+  .hero {
+    padding: 100px 30px 40px;
+  }
 
-    .hero__intro h3{
-        font-size: 22px;
-        line-height: 34px;
-    }
+  .hero__intro h3 {
+    font-size: 22px;
+    line-height: 34px;
+  }
 
-    .hero__intro p{
-        font-size: 13px;
-    }
+  .hero__intro p {
+    font-size: 13px;
+  }
 
-    .hero__socials{
-        top: 6%;
-    }
+  .hero__socials {
+    top: 6%;
+  }
 
-    .contact{
-        flex-direction: column;
-        padding: 60px 30px 80px;
-    }
+  .contact {
+    flex-direction: column;
+    padding: 60px 30px 80px;
+  }
 
-    .contact__desc,
-    .contact__stats,
-    .category__title,
-    .category__desc,
-    .career__jobs,
-    .career__awards{
-        width: 100%;
-    }
+  .contact__desc,
+  .contact__stats,
+  .category__title,
+  .category__desc,
+  .career__jobs,
+  .career__awards {
+    width: 100%;
+  }
 
-    .contact__desc{
-        padding-right: 0;
-    }
+  .contact__desc {
+    padding-right: 0;
+  }
 
-    .showcase{
-        padding: 80px 30px 100px;
-    }
+  .showcase {
+    padding: 80px 30px 100px;
+  }
 
-    .category__header{
-        flex-direction: column;
-    }
+  .category__header {
+    flex-direction: column;
+  }
 
-    .category__title{
-        margin-bottom: 20px;
-    }
+  .category__title {
+    margin-bottom: 20px;
+  }
 
-    .career{
-        padding: 60px 30px 80px;
-        flex-direction: column;
-        gap: 60px;
-    }
+  .career {
+    padding: 60px 30px 80px;
+    flex-direction: column;
+    gap: 60px;
+  }
 
-    .footer{
-        padding: 20px 30px;
-    }
-
+  .footer {
+    padding: 20px 30px;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    
-    .navbar{
-        padding: 10px 20px;
-    }
+  .navbar {
+    padding: 10px 20px;
+  }
 
-    .navbar__logo{
-        font-size: 10px;
-    }
+  .navbar__logo {
+    font-size: 10px;
+  }
 
-    .navbar__logo i{
-        font-size: 14px;
-    }
+  .navbar__logo i {
+    font-size: 14px;
+  }
 
-    .navbar__actions{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-    }
+  .navbar__actions {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
 
-    .navbar__actions .btn{
-        font-size: 10px;
-    }
+  .navbar__actions .btn {
+    font-size: 10px;
+  }
 
-    .navbar__actions h5{
-        font-size: 10px;
-    }
-    .navbar__actions p{
-        font-size: 18px;
-    }
+  .navbar__actions h5 {
+    font-size: 10px;
+  }
 
-    .navbar__menu{
-        gap: 15px;
-    }
+  .navbar__actions p {
+    font-size: 18px;
+  }
 
-    .navbar__menu a{
-        font-size: 15px;
-    }
+  .navbar__menu {
+    gap: 15px;
+  }
 
-    .hero{
-        flex-direction: column;
-        height: auto;
-        padding: 40px 30px 0px;
-        gap: 30px;
-    }
+  .navbar__menu a {
+    font-size: 15px;
+  }
 
-    .hero__intro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .hero__content h2{
-        width: 100%;
-        font-size: 30px;
-    }
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 30px 0px;
+    gap: 30px;
+  }
 
-    .hero__actions .btn, .btn--secondary,
-    .contact__actions .btn, .btn--secondary{
-        font-size: 14px;
-    }
+  .hero__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero__socials{
-        position: relative;
-        flex-direction: row;
-        right: auto;
-        margin-top: 10px;
-    }
+  .hero__content h2 {
+    width: 100%;
+    font-size: 30px;
+  }
 
-    .showcase__header h3{
-        font-size: 24px;
-    }
+  .hero__actions .btn, .btn--secondary,
+  .contact__actions .btn, .btn--secondary {
+    font-size: 14px;
+  }
 
-    .category__title h4{
-        font-size: 20px;
-    }
+  .hero__socials {
+    position: relative;
+    flex-direction: row;
+    right: auto;
+    margin-top: 10px;
+  }
 
-    .project-card{
-        width: 100%;
-        height: 500px;
-    }
+  .showcase__header h3 {
+    font-size: 24px;
+  }
 
-    .project-card__image{
-        height: 300px;
-    }
+  .category__title h4 {
+    font-size: 20px;
+  }
 
-    .career h3{
-        font-size: 26px;
-    }
+  .project-card {
+    width: 100%;
+    height: 500px;
+  }
 
-    .footer{
-        flex-direction: column-reverse;
-        gap: 16px;
-    }
+  .project-card__image {
+    height: 300px;
+  }
 
+  .career h3 {
+    font-size: 26px;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
 }

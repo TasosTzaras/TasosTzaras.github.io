@@ -5,32 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasos Tzaras</title>
-    <!-- <link rel="icon" href="binary_title.png" type="image/x-icon"> -->
     <link rel="icon" href="mr_robot_title.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.min.css">
-    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css?v=<%= Date.now() %>">
-    <!-- Link to your JavaScript file with a dynamically generated version -->
-    <script>
-        const version = new Date().getTime();
-        document.write(`<link rel="stylesheet" href="styles.css?v=${version}">`);
-        document.write(`<script src="updateVersion.js?v=${version}"><\/script>`);
-    </script>
+
+    <script src="sectionScroll.js"></script>
 </head>
 
 
 
 <body>
-    <!-- <header>
-        <h1>ARE YOU A ZERO OR A ONE?</h1>
-    </header>
-
-    <qr>
-        <figure>
-            <img src="linktre.png" , alt="Linktree QRCode" , style="width:128px;height:128px;">
-            <figcaption><a>Scan For LinkTree!</a></figcaption>
-        </figure>
-    </qr> -->
 
     <nav class="navbar">
         <a href="#" class="navbar__logo"><i class="ri-terminal-fill"></i>Tasos Tzaras</a>
@@ -48,31 +32,8 @@
             </div>
             <button class="btn" id="toggleDarkMode">Hello Friend<i id="modeIcon" class="ri-moon-line icon-margin"></i>
             </button>
-
-            <script>
-                document.getElementById('toggleDarkMode').addEventListener('click', function () {
-                    document.body.classList.toggle('dark-mode');
-                    const modeIcon = document.getElementById('modeIcon');
-                    const button = document.getElementById('toggleDarkMode');
-                    if (document.body.classList.contains('dark-mode')) {
-                        modeIcon.classList.remove('ri-moon-line');
-                        modeIcon.classList.add('ri-sun-line');
-                        button.innerHTML = 'Goodbye Friend<i id="modeIcon" class="ri-sun-line icon-margin"></i>';
-                    } else {
-                        modeIcon.classList.remove('ri-sun-line');
-                        modeIcon.classList.add('ri-moon-line');
-                        button.innerHTML = 'Hello Friend<i id="modeIcon" class="ri-moon-line icon-margin"></i>';
-                    }
-                });
-            </script>
+            <script src="toggleModes.js"></script>
         </div>
-
-        <!-- <a href="https://drive.google.com/file/d/1UVGSb6h_V1qrWUynaitBi6rzxxoEgZCw/view?usp=sharing" target="_blank">
-            <i class="ri-drive-line"></i>Resume
-        </a>
-        <a href="https://www.linkedin.com/in/tasos-tzaras-04910b213/" target="_blank"><i
-                class="ri-linkedin-box-fill"></i>LinkedIn</a>
-        <a href="https://github.com/TasosTzaras" target="_blank"><i class="ri-github-line"></i>GitHub</a> -->
     </nav>
     <section id="hero" class="hero">
         <div class="hero__content">
@@ -200,8 +161,34 @@
                 fine-tuning broadened my expertise in deploying and optimizing computer vision systems across
                 complex
                 conditions.
-
             </h4>
+        </div>
+        <div class="converter">
+            <h2>Currency Converter</h2>
+        </div>
+        <div class="converter__app">
+            <form id="converter-form">
+                <div class="amount">
+                    <p>Amount:</p>
+                    <input type="text">
+                </div>
+                <div class="convert__box">
+                    <div class="from">
+                        <p>From:</p>
+                        <select>
+                        </select>
+                    </div>
+                    <div class="convert_icon"><i class="ri-exchange-box-line"></i></div>
+                    <div class="to">
+                        <p>To:</p>
+                        <select>
+                        </select>
+                    </div>
+                </div>
+                <div class="convert__button"><button type="submit">Convert</button></div>
+                <div class="result">Getting exchange rate...</div>
+            </form>
+
         </div>
     </section>
 
@@ -214,14 +201,8 @@
         </div>
     </section>
 
-
-    <!-- <section>
-        <h2>Control is an illusion</h2>
-
-    </section> -->
-
-
     <script src="clock.js"></script>
+    <script src="converter.js"></script>
 
 </body>
 

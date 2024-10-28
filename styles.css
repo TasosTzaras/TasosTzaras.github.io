@@ -191,7 +191,7 @@ img {
   border-radius: 25px;
 }
 
-.hero__content h2, .thesis__project h2 {
+.hero__content h2, .thesis__project h2, .converter h2 {
   color: var(--hero-content-color);
   font-size: 30px;
   font-family: 'MrRobot', sans-serif;
@@ -248,26 +248,96 @@ img {
 }
 
 .hero__socials a:hover {
-    background-color: var(--button-hover-background-color);
-    color: var(--button-hover-text-color);
+  background-color: var(--button-hover-background-color);
+  color: var(--button-hover-text-color);
 }
 
 .projects{
   position: relative;
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
   justify-content: space-between;
   padding: 50px 60px;
   gap: 60px;
-  height: calc(100vh - 75px);
+  height: auto;
   border-bottom-color: red;
 }
 
-.thesis__project h2{
+.thesis__project h2, .converter h2{
   color: red;
 }
+
 h4{
   color: var(--projects-text-color);
+}
+
+.converter__app{
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 60px;
+  gap: 20px;
+  height: auto;
+}
+
+.convert__box, .amount, .convert__button{
+  display: flex;
+  /* align-items: top; */
+  justify-content: center;
+}
+
+#converter-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.amount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.converter__app input, select{
+  height: 25px;
+  width: 60px;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.converter__app button{
+  height: 25px;
+  width: 60px;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.converter__app button:hover{
+  background-color: red;
+  color: white;
+}
+
+.convert_icon{
+  font-size: 30px;
+}
+
+.convert__box p,
+.convert__box select {
+    margin: 0 4px; /* Adjust the margin as needed */
+}
+
+.converter__app p{
+  font-family: 'MrRobot', sans-serif;
 }
 
 .contact {
@@ -336,6 +406,7 @@ h4{
 
   .hero, .projects{
     padding: 100px 30px 40px;
+    height: auto;
   }
 
   .hero__intro h3 {
@@ -392,6 +463,10 @@ h4{
   }
 }
 
+.converter__app{
+  font-size: 22px;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
@@ -434,7 +509,7 @@ h4{
   .hero, .projects{
     flex-direction: column;
     height: auto;
-    padding: 40px 30px 0px;
+    padding: 40px 30px 40px;
     gap: 30px;
   }
 
@@ -477,6 +552,10 @@ h4{
   .project-card__image {
     height: 300px;
   }
+
+  .converter__app{
+  font-size: 18px;
+}
 
   .career h3 {
     font-size: 26px;

@@ -271,6 +271,10 @@ h4{
   color: var(--projects-text-color);
 }
 
+h4 i{
+  color: var(--projects-text-color);
+}
+
 .converter__app{
   font-size: 32px;
   display: flex;
@@ -284,8 +288,7 @@ h4{
 
 .convert__box, .amount, .convert__button{
   display: flex;
-  /* align-items: top; */
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #converter-form{
@@ -294,6 +297,9 @@ h4{
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  border: 2px solid red;
+  border-radius: 10%;
+  padding: 20px 20px;
 }
 
 .amount{
@@ -318,7 +324,7 @@ h4{
   border-radius: 5px;
   text-align: center;
   justify-content: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
 }
 
@@ -328,6 +334,8 @@ h4{
 }
 
 .convert_icon{
+  display: flex;
+  align-items: flex-end;
   font-size: 30px;
 }
 

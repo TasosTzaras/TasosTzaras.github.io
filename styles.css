@@ -192,7 +192,7 @@ img {
   border-radius: 25px;
 }
 
-.hero__content h2, .thesis__project h2, .converter h2 {
+.hero__content h2, .thesis__project h2, .converter h2, .weather h2 {
   color: var(--hero-content-color);
   font-size: 30px;
   font-family: 'MrRobot', sans-serif;
@@ -264,7 +264,7 @@ img {
   border-bottom-color: red;
 }
 
-.thesis__project h2, .converter h2{
+.thesis__project h2, .converter h2, .weather h2{
   color: red;
 }
 
@@ -355,6 +355,16 @@ h4 i{
 
 .converter__app p{
   font-family: 'MrRobot', sans-serif;
+}
+
+.weather__app{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  gap: 25px;
+  height: auto;
 }
 
 .contact {
@@ -484,7 +494,7 @@ h4 i{
   font-size: 22px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
     padding: 10px 20px;
   }
@@ -558,7 +568,7 @@ h4 i{
   align-items: flex-end;
   font-size: 30px;
   margin-top: 20px;
-}
+  }
 
   .project-card {
     width: 100%;
@@ -571,8 +581,17 @@ h4 i{
 
   .converter__app{
   font-size: 18px;
-}
+  }
 
+  .weather__app{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 25px;
+    height: auto;
+  }
   .career h3 {
     font-size: 26px;
   }

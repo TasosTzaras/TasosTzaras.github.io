@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css?v=<%= Date.now() %>">
 
     <script src="sectionScroll.js"></script>
+
 </head>
 
 
@@ -209,6 +210,23 @@
 
         </div>
 
+        <div class="weather">
+            <h2>Weather App</h2>
+        </div>
+        <div class="weather__app">
+            <form id="weather-form">
+                <div class="city">
+                    <input type="text" id="cityName" placeholder="City"><br><br>
+                    <div class="weather__button"><i class="ri-search-line"></i><button type="submit"
+                            id="searchBtn">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="weather__results" id="weatherResults">
+            </div>
+
+        </div>
+
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
@@ -256,6 +274,8 @@
 
     <script src="clock.js"></script>
     <script src="converter.js"></script>
+    <script src="weather.js"></script>
+
 
 </body>
 

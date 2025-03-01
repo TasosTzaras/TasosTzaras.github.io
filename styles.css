@@ -367,6 +367,11 @@ h4 i{
   height: auto;
 }
 
+.weather__app input, #searchBtn{
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
 .contact {
   padding: 60px;
   display: flex;
